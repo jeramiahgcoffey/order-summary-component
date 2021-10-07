@@ -1,0 +1,100 @@
+html {
+    margin: 0 0 0 0;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    /* grid-template-columns: 1fr 10fr 1fr; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 800px 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 32px;
+    margin: 15px 0 25px 0;
+}
+
+h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin-top: 0;
+}
+
+.content {
+    /* grid-column: 2; */
+    grid-row: 2;
+    max-width: 450px;
+    display: grid;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.summary {
+    padding: 30px 50px 0 50px;
+}
+
+.plan {
+    border-radius: 10px;
+    margin: 30px;
+    padding: 5px 25px;
+    background-color: hsl(225, 100%, 98%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-text {
+    text-align: left;
+}
+
+.change-plan {
+    text-align: right;
+}
+
+.attribution {
+    /* grid-column: 2; */
+    grid-row: 3;
+}
+
+.confirmation-buttons {
+    display: grid;
+    justify-items: center;
+}
+
+button {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 28%;
+    display: block;
+    font-weight: 700;
+}
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+
+.cancel {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
